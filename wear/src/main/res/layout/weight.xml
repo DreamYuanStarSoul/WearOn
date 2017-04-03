@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:baselineAligned="false"
+    android:background="@color/dark_gray_transparent_weak">
+    <!--
+        <android.support.wearable.view.CircledImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_smart1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:circle_radius="30dp"
+            app:circle_radius_pressed="30dp"
+            app:circle_border_width="2dp"
+            app:circle_border_color="@color/blue"
+            />
+            -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <!--
+        <ImageView
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/ic_weight2"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+
+            />
+        -->
+        <android.support.wearable.view.DelayedConfirmationView
+            android:id="@+id/weight_confirmation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:circle_border_color="@color/massive_bright_green"
+            app:circle_border_width="6dp"
+            app:circle_radius="60dp"
+            app:circle_color="@color/massive_blue_green"
+            app:circle_radius_pressed="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </android.support.wearable.view.DelayedConfirmationView>
+
+
+        <ImageView
+            android:id="@+id/weight_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_bloodpressure"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:id="@+id/weight_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/weight_text_value_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="114"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:padding="0dp"
+                style="@style/TextAppearance.WearDiag.Button"/>
+
+            <TextView
+                android:id="@+id/weight_text_value_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="114"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:padding="0dp"
+                style="@style/TextAppearance.WearDiag.Button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="mm Hg"
+                android:layout_gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                style="@style/TextAppearance.WearDiag.Button"
+                 />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--
+    <ImageView
+        android:id="@+id/welcome_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"/>
+        -->
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Blood Pressure"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        style="@style/TextAppearance.WearDiag.Button" />
+
+
+</LinearLayout>

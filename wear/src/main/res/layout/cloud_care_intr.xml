@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/dark_gray_transparent_weak">
+
+    <!--
+    <com.cisco.wear_on.ui.CircleImageView
+        xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/ic_cloud_care"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        />
+
+        -->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_cloud_heath"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="Cloud care"
+        android:layout_gravity="center"
+
+        style="@style/TextAppearance.WearDiag.Button" />
+
+
+</LinearLayout>

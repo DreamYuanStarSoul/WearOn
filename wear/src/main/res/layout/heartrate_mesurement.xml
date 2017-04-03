@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/dark_gray_transparent_weak"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <android.support.wearable.view.CircledImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:circle_radius="110dp"
+            app:circle_radius_pressed="30dp"
+            app:circle_border_width="8dp"
+            app:circle_border_color="@color/white"
+            android:id="@+id/view"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/heart_rate_text_value"
+                    android:text="0"
+                    android:textSize="84sp"
+                    style="@style/TextAppearance.WearDiag.Button" />
+                <ImageButton
+                    android:id="@+id/heart_rate_pr_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pause_circle_outline_white_18dp"
+                    android:background="@color/transparent"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/heart_rate_text_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Beats/min"
+                android:layout_gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                style="@style/TextAppearance.WearDiag.Button"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hear_rate_status_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cloud_off_white_18dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignBottom="@+id/view"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <!--
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Steps"
+            android:layout_gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            style="@style/TextAppearance.WearDiag.Button"
+            android:layout_alignBottom="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="4,564"
+            android:textSize="45dp"
+            android:textColor="#fdfbfb" />
+
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

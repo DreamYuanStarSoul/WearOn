@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<android.support.wearable.view.WatchViewStub
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    app:rectLayout="@layout/rect_activity_main"
+    app:roundLayout="@layout/round_activity_main"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear"></android.support.wearable.view.WatchViewStub>
+
+
+-->
+
+<!--
+android:padding="5dp"
+-->
+
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/dark_gray_transparent_weak">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_box="all">
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_heart_rate"
+
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/text_blank"
+                android:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/some_text"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="48sp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/renew"
+            android:background="@null"
+            android:layout_gravity="bottom|left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_autorenew_white_48dp" />
+
+        <ImageButton
+            android:id="@+id/upload"
+            android:background="@null"
+            android:layout_gravity="bottom|right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_backup_white_48dp" />
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>

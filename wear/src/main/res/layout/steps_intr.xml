@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/dark_gray_transparent_weak">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stepscounter"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="Pedometer"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        style="@style/TextAppearance.WearDiag.Button" />
+
+    <!--
+    <com.cisco.wear_on.ui.CircularImageView
+        xmlns:app="http://schemas.android.com/apk/res/com.cisco.wear_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:border="true"
+        app:border_color="@color/green"
+        app:border_width="4dp"
+        app:shadow="false"
+        android:src="@drawable/ic_heart_rate"
+
+        android:layout_gravity="center_horizontal"/>
+    -->
+</LinearLayout>
